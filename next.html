@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=<div class="container">
+        <header>
+            <h1>RUMAH MAMAM SYIFA</h1>
+        </header>
+        <div class="container">
+            <h2>Menu</h2>
+            <div class="menu-item">
+                <h2>Ayam Goreng</h2>
+                <p>Harga: Rp 20.000</p>
+                <button onclick="tambahKeKeranjang('Ayam Goreng', 20000)">Tambah ke Keranjang</button>
+            </div>
+            <div class="menu-item">
+                <h2>Nasi Goreng</h2>
+                <p>Harga: Rp 15.000</p>
+                <button onclick="tambahKeKeranjang('Nasi Goreng', 15000)">Tambah ke Keranjang</button>
+            </div>
+
+            <ul id="keranjang-belanja">
+            </ul>
+        </div>
+    
+
+    <script>
+        function tambahKeKeranjang(nama, harga) {
+            var keranjangBelanja = document.getElementById('keranjang-belanja');
+            var itemBaru = document.createElement('li');
+            itemBaru.textContent = nama + ' - Rp ' + harga;
+            keranjangBelanja.appendChild(itemBaru);
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
